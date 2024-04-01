@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../assets/fonts/Nunito-Bold.ttf");
+}
+
+.header {
+    position: fixed;
+    z-index: 5;
+    left: 45%;
+    text-align: center;
+    padding-top: 27px;
+}
+.header img{
+    position: relative;
+    z-index: 0;
+}
+.main {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.section.grey, .section.white {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+}
+
+.section.grey {
+    background: #F8F8FA;
+}
+
+.section.white {
+    align-items: flex-end;
+}
+
+.accaunt-input {
+    font-family: Nunito, sans-serif;
+    width: 496px;
+}
+
+.accaunt-input-h1 {
+    font-size: 36px;
+    line-height: 49px;
+    color: #3d3c3c;
+}
+
+.accaunt-input-p {
+    font-size: 22px;
+    line-height: 27px;
+    color: #636363;
+    padding: 7px 0 42px 0;
+}
+
+.form label {
+    display: grid;
+    position: relative;
+}
+
+.form span {
+    top: 15px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #C6C6C4;
+    position: relative;
+    z-index: 2;
+    user-select: none;
+}
+
+.input {
+    position: relative;
+    width: 452px;
+    font-family: Nunito, sans-serif;
+    line-height: 27px;
+    color: #323232;
+    font-size: 20px;
+    border: transparent;
+    border-bottom: 1px solid #C6C6C4;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 9px;
+
+}
+.eyes, .eyes2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 50px;
+    top: 33px;
+    fill: black;
+    z-index: 10;
+}
+
+.div.span-checkbox {
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+}
+
+.form .span-checkbox {
+    top: 0;
+}
+
+.form .div-checkbox {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+.top{
+    gap: 10px;
+    display: flex;
+}
+
+.button {
+    width: 210px;
+    height: 70px;
+    background: #DD3142;
+    border-radius: 40px;
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.link {
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    top: 44px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+
+.hidden {
+    position: absolute;
+    z-index: 15;
+    background: #000000ba;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.hidden.open {
+    display: flex;
+}
+
+.block p {
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    padding: 7px 5px 100px 5px;
+    width: 461px;
+    text-align: center;
+    border-radius: 35px;
+    color: #FFFFFF;
+}
+
+.block {
+    display: flex;
+    position: relative;
+    border-radius: 35px;
+}
+
+.hidden-button {
+    position: absolute;
+    bottom: 23px;
+    left: 150px;
+    width: 200px;
+    height: 60px;
+    background: red;
+    font-family: Nunito, sans-serif;
+    font-size: 22px;
+    border: 0;
+    border-radius: 35px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    fill: #FFFFFF;
+}
+.error-input{
+    color: red;
+    font-size: larger;
+    display: none;
+}
+.error-input.flex{
+    display: flex;
+}
